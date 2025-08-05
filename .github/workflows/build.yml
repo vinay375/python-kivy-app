@@ -40,7 +40,7 @@ jobs:
         
       - name: Build with Buildozer
         run: |
-          yes | buildozer -v android debug
+          buildozer -v android debug --non-interactive
         shell: bash
         
       - name: Upload artifact
